@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع معرض السيارات</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <header>
+        <h1>Car Exhibition Project</h1>
+        <p>The best place to buy your future car</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About the Project</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h2>Project Idea</h2>
+            <p>The car exhibition aims to provide the best cars at competitive prices, ensuring quality and reliability. We strive to offer an easy and fast buying experience for our customers.</p>
+        </section>
+    
+        <section id="features">
+            <h2>Our Features</h2>
+            <ul>
+                <li>A wide range of new and used cars.</li>
+                <li>A warranty of up to 5 years on cars.</li>
+                <li>Flexible financing service to meet customer needs.</li>
+                <li>After-sales service and regular maintenance.</li>
+            </ul>
+        </section>
+    
+        <section id="goals">
+            <h2>Our Goals</h2>
+            <p>We aim to achieve excellence in car sales by offering high-quality products and exceptional services. Our goal is to build long-lasting relationships with our customers.</p>
+        </section>
+    
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="images/picture8.jpg" alt="Sports Car" onclick="zoomImage(this)">
+                <img src="images/picture9.jpg" alt="Family Car" onclick="zoomImage(this)">
+                <img src="images/picture10.jpg" alt="Economical Car" onclick="zoomImage(this)">
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 Car Exhibition. All rights reserved.</p>
+    </footer>
+    
+    <script src="page1.js"></script>
+</body>
+</html>
