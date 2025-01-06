@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrioCar</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+  
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="#">
+                <h1> Creat Account </h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social"> <i class='bx bxl-google-plus' ></i></a>
+                    <a href="#" class="social"> <i class='bx bxl-linkedin' ></i></a>
+
+                </div>
+                <p> or use your email for registration</p>
+                <input type="text" name="txt" placeholder="Neme" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="password" required="">
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <!-- -------------------------------------------------------------------------------------- -->
+        <div class="sign-in">
+            <form action="#">
+                <h1> Sign in </h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="social"> <i class='bx bxl-google-plus' ></i></a>
+                    <a href="#" class="social"> <i class='bx bxl-linkedin' ></i></a>
+
+                </div>
+                <p> or use your account </p>
+
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="password" name="pswd" placeholder="password" required="">
+                <a href="#"> Forget your password?</a>
+                <button>Sign in</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p> To Keep connected with us please login with your personal information</p>
+                    <button id="signIn"> Sign In</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>Hello,Friend</h1>
+                    <p>Enter Your personal details and start journey with us </p>
+                    <button id="signUp"> Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const signUpButton=document.getElementById('signUp');
+        const signInButton=document.getElementById('signIn');
+        const main=document.getElementById('main');
+        signUpButton.addEventListener('click',()=>{
+            main.classList.add("right-panel-active");
+        });
+        signInButton.addEventListener('click',()=>{
+            main.classList.remove("right-panel-active");
+        });
+    </script>
+     <button><a href="homepage.html"> guest</a></button>
+     <p style="background-color: brown;">if you enter as a guest you will not acsess to rent(only view)</p>
+    <!-----------------------------------HomePage------------------------------------------ -->
+    <!-----------------------------------HomePage------------------------------------------ -->
+    <!-----------------------------------HomePage------------------------------------------ -->
+    <!-----------------------------------HomePage------------------------------------------ -->
+    <!-----------------------------------HomePage------------------------------------------ -->
+</body>
+
+</html>
